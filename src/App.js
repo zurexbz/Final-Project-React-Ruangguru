@@ -11,10 +11,6 @@ const App = () => {
   const [loading, setLoading] = useState(false);
   let navigate = useNavigate();
 
-  // useEffect(() => {
-  //   renderStudents();
-  // }, []);
-
   const renderStudents = async () => {
     try {
       const respone = await fetch("http://localhost:3001/student");
